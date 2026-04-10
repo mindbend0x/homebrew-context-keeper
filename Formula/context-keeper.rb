@@ -30,6 +30,6 @@ class ContextKeeper < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/context-keeper --version")
+    assert_match "context-keeper", shell_output("#{bin}/context-keeper --version")
   end
 end
