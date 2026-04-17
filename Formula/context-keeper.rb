@@ -1,26 +1,26 @@
 class ContextKeeper < Formula
   desc "Temporal knowledge graph memory system"
   homepage "https://github.com/mindbend0x/context-keeper"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mindbend0x/context-keeper/releases/download/v#{version}/context-keeper-cli-aarch64-apple-darwin"
-      sha256 "3a44b4ced927a59678b97855a39d09ee2e3dd3c48d112d90f897a7e87b7e8aeb"
+      sha256 "51e64cf44f16a24687ae5d67726ca60928fba31006c75e5d0ab73e700698318d"
     else
       url "https://github.com/mindbend0x/context-keeper/releases/download/v#{version}/context-keeper-cli-x86_64-apple-darwin"
-      sha256 "7b46878bf23320b241c36f35f0d8e2bc0fb822887cd54de6e1c944c57ea75372"
+      sha256 "4b95cd78d6f7356cf559fc0982b059ecf5f952b41dddf09020a0c01c3644ca57"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/mindbend0x/context-keeper/releases/download/v#{version}/context-keeper-cli-aarch64-unknown-linux-gnu"
-      sha256 "16728c919b93d5780a5561d1628d641a6d75186c3846d4ed5ba3af64d254abcc"
+      sha256 "96a0691240c1c3ee1fbfecdf985d8c0104d1ad7e0b27e2257df2a952b9900960"
     else
       url "https://github.com/mindbend0x/context-keeper/releases/download/v#{version}/context-keeper-cli-x86_64-unknown-linux-gnu"
-      sha256 "08c4ed1042da510e341d6f6018531b07102edbb5bb9720f7f1eb6edc5e31e681"
+      sha256 "9d07e790707411d55950263a461f02f8cf4ea3d1c3c598358e3a23cee23b2da1"
     end
   end
 
