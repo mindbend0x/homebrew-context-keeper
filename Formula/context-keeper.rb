@@ -1,7 +1,7 @@
 class ContextKeeper < Formula
   desc "Temporal knowledge graph memory system"
   homepage "https://github.com/mindbend0x/context-keeper"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
