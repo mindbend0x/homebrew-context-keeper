@@ -7,20 +7,20 @@ class ContextKeeper < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mindbend0x/context-keeper/releases/download/v#{version}/context-keeper-cli-aarch64-apple-darwin"
-      sha256 "b98ca581ce1f231de2f49c8809c1583704fd019162b26421382011327499447f"
+      sha256 "51e64cf44f16a24687ae5d67726ca60928fba31006c75e5d0ab73e700698318d"
     else
       url "https://github.com/mindbend0x/context-keeper/releases/download/v#{version}/context-keeper-cli-x86_64-apple-darwin"
-      sha256 "fe72459464e4d5b6c3aaae967494507baecb354ad499d9e57c7b6e5355d64984"
+      sha256 "4b95cd78d6f7356cf559fc0982b059ecf5f952b41dddf09020a0c01c3644ca57"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/mindbend0x/context-keeper/releases/download/v#{version}/context-keeper-cli-aarch64-unknown-linux-gnu"
-      sha256 "f2d3825b61db0a4bad2369258c06a432cc9421ea5da8ca1c7614f04f40747f98"
+      sha256 "96a0691240c1c3ee1fbfecdf985d8c0104d1ad7e0b27e2257df2a952b9900960"
     else
       url "https://github.com/mindbend0x/context-keeper/releases/download/v#{version}/context-keeper-cli-x86_64-unknown-linux-gnu"
-      sha256 "2bb3c05c8eadc1346b4b0512d014e34c48e2be20248dcc029b44241e24d493b4"
+      sha256 "9d07e790707411d55950263a461f02f8cf4ea3d1c3c598358e3a23cee23b2da1"
     end
   end
 
